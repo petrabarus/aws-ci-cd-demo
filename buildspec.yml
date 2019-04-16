@@ -9,3 +9,7 @@ phases:
     build:
         commands:
             - make
+            - make clean
+artifacts:
+    files:
+        - '**/*'
