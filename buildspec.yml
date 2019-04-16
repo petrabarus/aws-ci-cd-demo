@@ -12,4 +12,4 @@ phases:
             - make clean
 artifacts:
     files:
-        - '**/*'
+        - appspec.yaml
