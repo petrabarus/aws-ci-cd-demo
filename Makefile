@@ -20,3 +20,6 @@ clean:
 
 test:
 	$(PYTEST) -s tests/
+
+deploy:
+	serverless deploy --stage prod

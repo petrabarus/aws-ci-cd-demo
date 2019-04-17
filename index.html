@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AWS CI/CD Demo</title>
+    <meta name="description" content="A simple HTML and CSS tutorial">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <p></p>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+          var url = "https://95ogkpiurc.execute-api.ap-southeast-1.amazonaws.com/prod/hello";
+          $.getJSON(url, function (data) {
+              alert(data.message);
+          });
+      })
+    </script>
+  </body>
+</html>

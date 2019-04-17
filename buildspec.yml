@@ -5,11 +5,13 @@ phases:
         commands:
             - pip install --upgrade pip
             - pip install virtualenv
+            - apt install nodejs npm
+            - npm install -g serverless
             - make env
     build:
         commands:
             - make
             - make clean
-artifacts:
-    files:
-        - appspec.yaml
+    deploy:
+        commands:
+            - make deploy

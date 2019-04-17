@@ -1,0 +1,15 @@
+service: aws-ci-cd-demo-serverless
+
+provider:
+    name: aws
+    runtime: python3.7
+    region: ap-southeast-1
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
+          cors: true
