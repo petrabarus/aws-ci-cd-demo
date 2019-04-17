@@ -6,5 +6,4 @@ phases:
             - npm install -g serverless
     build:
         commands:
-            - make
-            - make clean
+            - make deploy
