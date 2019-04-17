@@ -1,9 +1,12 @@
 import json
 
+from demo.calculate import calculate
+
 
 def hello(event, context):
+    result = calculate(1, 2)
     body = {
-        "message": "Hello World!"
+        "message": "Hello World! Result is {}".format(result)
     }
 
     response = {

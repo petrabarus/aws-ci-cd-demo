@@ -9,7 +9,7 @@ PYLINT=$(VENVBIN)/pylint
 all: clean env test
 
 env:
-	virtualenv -p python3 venv
+	python3 -m venv venv
 	$(PIP) install --upgrade pip
 	$(PIP) install -r requirements.dev.txt
 
