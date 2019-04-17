@@ -10,3 +10,17 @@ phases:
         commands:
             - make
             - make clean
+
+
+artifacts:
+    files:
+        - '**/*'
+    secondary-artifacts:
+        BuildArtifact:
+            base-directory: $CODEBUILD_SRC_DIR/
+            files:
+                - '**/*'
+        WebArtifact:
+            base-directory: $CODEBUILD_SRC_DIR/web
+            files:
+                - index.html
