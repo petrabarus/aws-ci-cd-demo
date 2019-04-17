@@ -12,6 +12,6 @@ phases:
         commands:
             - make
             - make clean
-    deploy:
+    post_build:
         commands:
             - make deploy
